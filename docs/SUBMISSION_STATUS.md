@@ -2,16 +2,15 @@
 
 | 대회 | 상태 | 비고 |
 | --- | --- | --- |
-| Open Agent Hackathon (GenAI Works) | ✅ 제출 완료 | HUNT Track 01, demo+video |
-| Zetaris Demo Challenge ($10k) | ⏳ 연동 준비 | Docker 기동됨. **Zetaris Cloud 가입+platform zip** 필요 후 라이브 SQL·영상·Dropbox |
-| Nebius × NVIDIA (Devpost) | ⏳ 드래프트 | **GitHub 로그인**(이 환경) → 공개 레포 → 제출 |
+| Open Agent Hackathon | ✅ 제출 완료 | HUNT Track 01 |
+| Nebius × NVIDIA (Devpost) | ⏳ 제출 직전 | 공개 레포 연결됨. 데모 영상 URL만 남음 → `/hunt-demo.mp4` 호스팅으로 재시도 |
 | Hecto HAI (DAKER) | ✅ 팀 등록 | HUNT Purse |
-| AI 라이프 솔루션 | 패키지 준비 | 10/31 메일, 공식 신청서 |
-| OPEN HARBOR | IR 초안 | `docs/open-harbor-ir.md` |
+| Zetaris Demo Challenge | ⏳ | Cloud/platform zip 계정 필요 |
+| AI 라이프 / OPEN HARBOR | 부분 | 신청서·전화 등 개인/계정 필드 |
 
-데모: https://starting-acting-jon-cigarette.trycloudflare.com  
-영상: `/opt/cursor/artifacts/hunt-open-agent-demo.mp4`
+## 공개 레포
+https://github.com/mjuykim-commits/hunt-contest-agent (또는 mjujykim — 확인 중)
 
-## 사용자에게만 남은 계정 작업
-1. 이 데스크톱에서 GitHub 로그인 (Nebius 공개 레포용)
-2. Zetaris Cloud Start Free 가입 후 Run locally 의 `zetaris-platform.zip` + registry 로그인 정보 확보 (또는 zip을 이 환경에 배치)
+## 데모
+앱: https://starting-acting-jon-cigarette.trycloudflare.com  
+영상 파일: https://starting-acting-jon-cigarette.trycloudflare.com/hunt-demo.mp4
