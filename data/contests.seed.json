@@ -1,0 +1,35 @@
+{
+  "strategy": "contest-hunter-first",
+  "brand": "HUNT",
+  "goalKrw": 100000000,
+  "priorityQueue": [
+    "open-agent-2026",
+    "nebius-nvidia-2026",
+    "codex-twitchcon-2026",
+    "hecto-hai-2026",
+    "open-harbor-2026"
+  ],
+  "userActionsRequired": [
+    {
+      "id": "register-open-agent",
+      "title": "Open Agent Hackathon 등록",
+      "url": "https://hackathon.genai.works/event/open-agent-hackathon-2026",
+      "deadlineKst": "2026-10-28 08:45 KST",
+      "why": "오늘 마감. 제출은 에이전트가 준비, 계정/팀 등록만 사용자 필요."
+    },
+    {
+      "id": "register-nebius",
+      "title": "Nebius × NVIDIA Devpost 등록",
+      "url": "https://nebiusglobalaihackathon.devpost.com/",
+      "deadlineKst": "2026-10-30 02:00 KST 전후(EDT 기준)",
+      "why": "대상 $20,000. 등록 후 프로젝트 제출 가능."
+    },
+    {
+      "id": "register-hecto",
+      "title": "Hecto HAI / DAKER 참가 등록",
+      "url": "https://daker.ai/public/hackathons/2026-hai-hecto-ai-challenge",
+      "deadlineKst": "2026-12-21 10:00 KST",
+      "why": "국내 총상금 2,600만. 중기 주력."
+    }
+  ]
+}

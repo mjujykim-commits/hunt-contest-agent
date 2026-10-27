@@ -1,0 +1,8 @@
+{
+  "goalKrw": 100000000,
+  "currency": "KRW",
+  "updatedAt": "2026-10-27T07:40:00.000Z",
+  "realizedKrw": 0,
+  "entries": [],
+  "notes": "입금·수상 증빙이 확인되면 entries에 추가한다. realizedKrw가 100000000 이상일 때만 목표 완료."
+}
