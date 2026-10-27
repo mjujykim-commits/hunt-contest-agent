@@ -17,6 +17,12 @@ export function HuntBoard() {
   } | null>(null);
   const [pending, startTransition] = useTransition();
   const [leadState, setLeadState] = useState<"idle" | "ok" | "err">("idle");
+  const [askQ, setAskQ] = useState("지금 뭐부터 응모해야 해? 왜?");
+  const [askA, setAskA] = useState<{
+    answer: string;
+    sources: string[];
+  } | null>(null);
+  const [askBusy, setAskBusy] = useState(false);
 
   useEffect(() => {
     let alive = true;
@@ -201,6 +207,66 @@ export function HuntBoard() {
             </a>
           ) : null}
         </div>
+      </div>
+
+      <div className="rounded-xl border border-[var(--line)] bg-[var(--panel)] p-5">
+        <h3
+          className="text-xl font-bold"
+          style={{ fontFamily: "var(--font-display), sans-serif" }}
+        >
+          Ask HUNT (Explain Why)
+        </h3>
+        <p className="mt-2 text-sm text-[var(--muted)]">
+          자연어로 물으면 파편 소스·기대값·마감을 근거로 답합니다.
+        </p>
+        <form
+          className="mt-4 flex flex-col gap-3 sm:flex-row"
+          onSubmit={async (e) => {
+            e.preventDefault();
+            setAskBusy(true);
+            try {
+              const res = await fetch("/api/ask", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ question: askQ }),
+              });
+              if (!res.ok) throw new Error("ask_failed");
+              const data = await res.json();
+              setAskA({ answer: data.answer, sources: data.sources || [] });
+            } catch {
+              setAskA({
+                answer: "질문에 답하지 못했습니다. 잠시 후 다시 시도하세요.",
+                sources: [],
+              });
+            } finally {
+              setAskBusy(false);
+            }
+          }}
+        >
+          <Input
+            value={askQ}
+            onChange={(e) => setAskQ(e.target.value)}
+            placeholder="예: Nebius를 왜 다음에 잡아야 해?"
+            className="flex-1"
+          />
+          <Button type="submit" disabled={askBusy}>
+            {askBusy ? "사냥 중…" : "물어보기"}
+          </Button>
+        </form>
+        {askA ? (
+          <div className="mt-4 space-y-2 text-sm leading-relaxed">
+            <p>{askA.answer}</p>
+            {askA.sources.length ? (
+              <ul className="space-y-1 text-xs text-[var(--mint)]/90">
+                {askA.sources.map((s) => (
+                  <li key={s} className="truncate">
+                    ▸ {s}
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </div>
+        ) : null}
       </div>
 
       <div className="grid gap-6 lg:grid-cols-2">

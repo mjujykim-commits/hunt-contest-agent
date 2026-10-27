@@ -93,7 +93,7 @@ export const CONTESTS: Contest[] = [
     status: "open",
     why: "국내 총상금 2,600만. 월렛+AI 웹서비스 — 중기 주력 타깃.",
     sources: ["daker.ai", "linkareer", "thinkyou"],
-    action: "Octet/오하이월렛 연동 프로토타입",
+    action: "DAKER 참가·HUNT Purse(/wallet)·Octet/오하이 키 연동",
   },
   {
     id: "open-harbor-2026",

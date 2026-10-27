@@ -27,15 +27,18 @@ npm run dev -- -p 43127
 4. **Hecto HAI** — 총상금 ₩26,000,000
 5. **OPEN HARBOR** 등 국내 단기전
 
-## 사용자 계정 필요 (에이전트가 대신 못 하는 일)
+## 계정 상태
 
-| 플랫폼 | URL |
-| --- | --- |
-| Open Agent | https://hackathon.genai.works/event/open-agent-hackathon-2026 |
-| Nebius Devpost | https://nebiusglobalaihackathon.devpost.com/ |
-| Hecto DAKER | https://daker.ai/public/hackathons/2026-hai-hecto-ai-challenge |
+| 플랫폼 | 상태 | 제출 초안 |
+| --- | --- | --- |
+| Open Agent (genai.works) | 가입 완료 | `docs/SUBMIT_OPEN_AGENT.md` |
+| Nebius (Devpost) | 가입 완료 | `docs/SUBMIT_NEBIUS_DEVPOST.md` |
+| Dacon / Hecto HAI (DAKER) | dacon.io 가입 완료 | `docs/SUBMIT_HECTO_HAI.md` |
 
-등록이 끝나면 제출물(데모 URL·레포·설명)은 이 저장소 기준으로 바로 올립니다.
+데모: http://127.0.0.1:43127 · Purse: http://127.0.0.1:43127/wallet  
+공개 터널(변동 가능): https://starting-acting-jon-cigarette.trycloudflare.com
+
+추가 키(사용자 발급): `NEBIUS_API_KEY`, `OCTET_API_KEY`, `OHAI_WALLET_ID`
 
 ## 매출 증빙
 

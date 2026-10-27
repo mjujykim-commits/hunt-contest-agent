@@ -44,13 +44,7 @@ export default function Home() {
                 <a href="#board">타깃 보드 열기</a>
               </Button>
               <Button asChild variant="secondary" size="lg">
-                <a
-                  href="https://hackathon.genai.works/event/open-agent-hackathon-2026"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open Agent 공고
-                </a>
+                <a href="/wallet">HUNT Purse</a>
               </Button>
             </div>
           </div>
